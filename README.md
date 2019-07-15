@@ -86,13 +86,13 @@ sudo apt-get install ffmpeg
 ```
 ffmpeg -r 60 -start_number 1234 -i _MG_%4d.CR2.jpg -c:v libx264 -pix_fmt yuv420p -vf scale=1920:-2 timelapse.mp4
 ```
-..- `-r 60` specifies the input frame-rate (of the images). Higher = faster timelapse
-..- `-start_number 1234` specifies the first sequence number of the images
-..- `-i _MG%4d.CR2.jpg` specifies the input file name. `%4d` is a four digit (leading zeros) number, eg. `_MG1234.CR2.jpg`
-..- `-c:v libx264` is using the H264 video enconding standard
-..- `-pix_fmt yuv420p` using yuv color space, with 4:2:0 chroma subsampling
-..- `-vf scale=1920:-2` scales to 1920 horizontal pixels, keeping the same aspect ratio. 
-..- `timelapse.mp4` is the output file name
+  - `-r 60` specifies the input frame-rate (of the images). Higher = faster timelapse
+  - `-start_number 1234` specifies the first sequence number of the images
+  - `-i _MG%4d.CR2.jpg` specifies the input file name. `%4d` is a four digit (leading zeros) number, eg. `_MG1234.CR2.jpg`
+  - `-c:v libx264` is using the H264 video enconding standard
+  - `-pix_fmt yuv420p` using yuv color space, with 4:2:0 chroma subsampling
+  - `-vf scale=1920:-2` scales to 1920 horizontal pixels, keeping the same aspect ratio. 
+  - `timelapse.mp4` is the output file name
 
 - Add more filters (eg. a zoom)
 ```
