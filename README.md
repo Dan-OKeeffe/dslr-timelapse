@@ -98,3 +98,6 @@ ffmpeg -r 60 -start_number 1234 -i _MG_%4d.CR2.jpg -c:v libx264 -pix_fmt yuv420p
 ```
 ffmpeg -r 60 -start_number 4034 -i _MG_%4d.CR2.jpg -c:v libx264 -pix_fmt yuv420p -vf "deshake=x=1506:y=1408:w=400:h=70:edge='original':filename='motion',zoompan=z='1+(1*in/700)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1, scale=1920:-2" timelapse-zoom-deshake.mp4
 ```
+
+## 4. Result
+[![Video timelapse of Olympic Stadium, Montreal](https://img.youtube.com/vi/ErL1pw--id8/0.jpg)](https://www.youtube.com/watch?v=ErL1pw--id8)
