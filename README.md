@@ -101,3 +101,26 @@ ffmpeg -r 60 -start_number 4034 -i _MG_%4d.CR2.jpg -c:v libx264 -pix_fmt yuv420p
 
 ## 4. Result
 [![Video timelapse of Olympic Stadium, Montreal](https://img.youtube.com/vi/ErL1pw--id8/0.jpg)](https://www.youtube.com/watch?v=ErL1pw--id8)
+
+
+# Astrophotography
+I've never tried astrophotography before, so here's a log of the resources I'm using and the steps.
+
+## Resources
+- [Stellarium Web](https://stellarium-web.org)
+  - Planning shots/to know what time/direction to aim for
+  - Input your position, and look for events (eg. see the Planets Tonight tab)
+- 
+
+## Steps
+- Choose a location, start time, end time
+- Put camera in position with tripod, and connect to AC power if necessary
+- Set up computer, connect to camera, and connect to AC power if necessary
+- Check focus, and confirm by taking a photo + zooming in
+- Check camera settings (ISO, f-stop, exposure). Take a photo to confirm it is correct
+- Take dark frames
+  - Cover lens and take 10-20 photos with the same camera settings
+- Take bias frames
+  - Leave lens on from dark frames, and adjust the exposure to minimum. Take 10-20 photos
+- Take flat frames
+  - Leave camera in same position. Take flat white photo (eg. paper in-front). Leave ISO fixed, but auto exposure (so peak of each channel is 1/3 to 2/3 maximum). Take 10-20 photos
